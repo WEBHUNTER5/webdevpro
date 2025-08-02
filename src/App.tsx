@@ -6,6 +6,8 @@ import Services from './components/Services';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import SEOContent from './components/SEOContent';
+import SEOBlog from './components/SEOBlog';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Hero />
       <PricingPackages />
       <Services />
+      <SEOContent />
+      <SEOBlog />
       <ContactForm />
       <Footer />
       <WhatsAppButton />
