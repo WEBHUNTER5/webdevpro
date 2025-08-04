@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main Website Pages Sitemap -->
+  <sitemap>
+    <loc>https://www.webdevpro.co.za/sitemap_pages.xml</loc>
+    <lastmod>2025-01-15</lastmod>
+  </sitemap>
+  
+  <!-- Blog Posts and Articles Sitemap -->
+  <sitemap>
+    <loc>https://www.webdevpro.co.za/sitemap_blog.xml</loc>
+    <lastmod>2025-01-15</lastmod>
+  </sitemap>
+  
+  <!-- Services and Products Sitemap -->
+  <sitemap>
+    <loc>https://www.webdevpro.co.za/sitemap_services.xml</loc>
+    <lastmod>2025-01-12</lastmod>
+  </sitemap>
+  
+  <!-- Location-Based Pages Sitemap -->
+  <sitemap>
+    <loc>https://www.webdevpro.co.za/sitemap_locations.xml</loc>
+    <lastmod>2025-01-10</lastmod>
+  </sitemap>
+  
+  <!-- Portfolio and Case Studies Sitemap -->
+  <sitemap>
+    <loc>https://www.webdevpro.co.za/sitemap_portfolio.xml</loc>
+    <lastmod>2025-01-08</lastmod>
+  </sitemap>
+
+</sitemapindex>
