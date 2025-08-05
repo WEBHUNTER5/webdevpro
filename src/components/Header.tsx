@@ -43,6 +43,9 @@ const Header = () => {
             <a href="#home" className="text-[#1a365d] hover:text-[#4299e1] font-medium transition-colors">
               Home
             </a>
+            <a href="#blog" className="text-[#1a365d] hover:text-[#4299e1] font-medium transition-colors">
+              Blog
+            </a>
             <a 
               href={`https://wa.me/27812159792?text=${encodeURIComponent('Hi! I\'m interested in your Web Design services. Can you provide more information?')}`}
               target="_blank"
@@ -177,6 +180,7 @@ const Header = () => {
           <div className="lg:hidden border-t py-4">
             <nav className="flex flex-col space-y-4">
               <a href="#home" className="text-[#1a365d] hover:text-[#4299e1] font-medium transition-colors">Home</a>
+              <a href="#blog" className="text-[#1a365d] hover:text-[#4299e1] font-medium transition-colors">Blog</a>
               <a 
                 href={`https://wa.me/27812159792?text=${encodeURIComponent('Hi! I\'m interested in your Web Design services. Can you provide more information?')}`}
                 target="_blank"
