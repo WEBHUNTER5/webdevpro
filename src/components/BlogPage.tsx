@@ -435,7 +435,7 @@ H4: Serving Greater Cape Town Area
 ## Technical Local SEO
 
 ### Schema Markup Implementation
-```json
+``\`json
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
