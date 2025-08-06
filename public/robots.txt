@@ -3,20 +3,40 @@ Allow: /
 
 # Sitemap
 Sitemap: https://www.webdevpro.co.za/sitemap.xml
+Sitemap: https://www.webdevpro.co.za/sitemap_index.xml
 
-# Crawl-delay
+# Crawl-delay for better server performance
 Crawl-delay: 1
 
-# Disallow admin areas
+# Disallow admin areas and sensitive directories
 Disallow: /admin/
 Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /wp-content/plugins/
 Disallow: /wp-content/cache/
-Disallow: /wp-content/themes/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
 
-# Allow important directories
+# Allow important directories for SEO
 Allow: /wp-content/uploads/
 Allow: /wp-content/themes/*/css/
 Allow: /wp-content/themes/*/js/
 Allow: /wp-content/themes/*/images/
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Block duplicate content and parameter URLs
+Disallow: /*?*
+Disallow: /*&*
+Disallow: /search
+Disallow: /tag/
+Disallow: /author/
+Disallow: /date/
+
+# Allow specific important parameters
+Allow: /*?utm_*
+Allow: /*?ref=*
+Allow: /*?source=*
