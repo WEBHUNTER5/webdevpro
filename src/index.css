@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* PWA Styles */
+body.offline {
+  position: relative;
+}
+
+body.offline::before {
+  content: "You're offline. Some features may not be available.";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #f56565;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+/* PWA Install Button Animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.pwa-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Smooth transitions for PWA elements */
+.pwa-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* PWA specific responsive adjustments */
+@media (display-mode: standalone) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* iOS PWA status bar adjustment */
+@supports (-webkit-touch-callout: none) {
+  @media (display-mode: standalone) {
+    body {
+      padding-top: 44px; /* iOS status bar height */
+    }
+  }
+}

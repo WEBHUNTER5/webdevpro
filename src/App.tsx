@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import SEOContent from './components/SEOContent';
 import SEOBlog from './components/SEOBlog';
+import PWAInstallPrompt from './components/PWAInstallPrompt';
+import PWAUpdatePrompt from './components/PWAUpdatePrompt';
 
 function App() {
   const [currentPage, setCurrentPage] = React.useState('home');
@@ -37,6 +39,8 @@ function App() {
         <BlogPage />
         <Footer />
         <WhatsAppButton />
+        <PWAInstallPrompt />
+        <PWAUpdatePrompt />
       </div>
     );
   }
@@ -52,6 +56,8 @@ function App() {
       <ContactForm />
       <Footer />
       <WhatsAppButton />
+      <PWAInstallPrompt />
+      <PWAUpdatePrompt />
     </div>
   );
 }
